@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4XRPD3TP16"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-4XRPD3TP16');
+		</script>
+		<title>Alteryx use-case</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="apple-touch-icon" sizes="180x180" href="images/MSB.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<ul class="icons">
+							<li><h1><a href="index.html">Home</a></h1></li>
+							<li><h1><a href="https://www.linkedin.com/in/matthieu-soussi-berjonval-6947112b/" class="icon brands fa-linkedin" target="_blank"></a></h1></li>
+							<li><h1><a href="https://github.com/Matthieu-SB?tab=projects" class="icon brands fa-github" target="_blank"></a></h1></li>
+						</ul>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html#banner">Home</a></li>
+								<li><a href="index.html#to-the-projects">Projects</a></li>
+								<li><a href="index.html#footer">Contact</a></li>
+								<li><a href="courses.html">Accreditations</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Alteryx use-case</h2>
+								<p>Basic ETL process using Alteryx</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">Background</h3>
+									<p>We have been provided with monthly trial balances, but...
+									<br>... one month = one file.</p>
+									<p>The Target Group is made of two trading entities: ie we need to keep track of those two trading entities but we also need to aggregate those two to ultimately present a consolidated view.</b></p>
+									<p>The task here is to collect the data from multiple files (<b>84 in total</b>, see further details below), treat it, clean it, and summarize that data into a tabular structured format.</b></p>
+
+									<h3 class="major">Challenges</h3>
+                                    <p>&#128012;&ensp;<b><u>Large number of files</u></b>
+									<p> We need to aggregate trial balances for two trading entities from multiple files. The historical period covers FY18 (12), FY19 (12), FY20 (12) and YTD21 (6) ie 42 different files for each entity.</p>
+									<p><img class="test" src="images/Other project1.JPG" alt=""></p>
+									<p>&#128012;&ensp;<b><u>Unstructured data source: data that needs to be cleaned</u></b>
+										<p> &#10004; Cleaning process is a manual process that would take long to achieve as it would need to be repeated 84 times</p>
+										<p> &#10004; Need to add information: calculate the balance (debit – credit) for each period and add an ‘entity column’</p>
+										<p><img class="test" src="images/Other project2.JPG" alt=""></p>
+										<p>&#128012;&ensp;<b><u>Need to summarize the data into one tabular structure format, rather than 84 different tabs</u></b>
+										
+									
+									
+                                  
+                                    
+									<h3 class="major">Typical process using Excel</h3>
+									<ol>
+										<li>Open each source file and copy the relevant tab into the main data-book;</li>
+										<li>Calculate TB’s balance for each period (ie each tab) and make sure the sheet structure is identical for all tabs;</li>
+										<li>Add an extra column and add the entity name;</li>
+										<li>Stack all the label and nominal ledger code and then remove duplicates so all the information could be summarised in a single table; and</li>
+										<li>Create a dynamic excel formulas to pick up all the data into each relevant tab. For instance <b>SUMIFS + INDIRECT</b> that would based on date, label and NL code criteria.</li>
+									</ol>
+									
+									<p><b>This manual excel work would typically take ½ day / one day, depending on level of experience. Overall this is a lenghthy process which is manual, and hence increases the risk of error.</b></p>
+								
+									<p><b>The same information can be processed into Alteryx within only 30 mins!</b></p>
+																										
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<h2 class="major">Get in touch</h2>
+							<ul class="contact">
+								<li id=indexpage class="icon solid fa-envelope"><a href="mailto:matthieu.soussi@gmail.com">matthieu.soussi@gmail.com</a></li>
+								<li id=indexpage class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/matthieu-soussi-berjonval-6947112b/" target="_blank">https://www.linkedin.com/in/matthieu-soussi-berjonval</a></li>
+							<ul class="copyright">
+								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			var vid = document.getElementById("PBI_param_vid");
+				vid.playbackRate = 2.0;
+			</script> 
+
+	</body>
+</html>
